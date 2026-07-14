@@ -1,0 +1,5 @@
+com/example/ecommerce/controller/ShopController.class
+com/example/ecommerce/model/CartItem.class
+com/example/ecommerce/EcommerceApplication.class
+com/example/ecommerce/model/Product.class
+com/example/ecommerce/service/ProductService.class
