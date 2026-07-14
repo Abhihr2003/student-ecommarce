@@ -81,7 +81,7 @@ pipeline {
 
         stage('Deploy') {
             steps {
-                echo 'Deploying application with Docker Compose...'
+                echo 'Deploying application with Docker Compose V2...'
                 
                     sh 'docker-compose down'
                     sh 'docker-compose up -d --build'
