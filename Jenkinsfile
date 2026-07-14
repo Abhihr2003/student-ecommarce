@@ -7,7 +7,7 @@ pipeline {
     }
 
     environment {
-        IMAGE_NAME = "shek07/ott-platform"
+        IMAGE_NAME = "shek07/ecommarce"
         IMAGE_TAG = "${BUILD_NUMBER}"
         CONTAINER_NAME = "e-commarce-app"
 
