@@ -85,6 +85,7 @@ pipeline {
                 dir('student-ecommerce') {
                     sh 'docker-compose down'
                     sh 'docker-compose up -d --build'
+		}
             }
         }
     }
@@ -103,4 +104,4 @@ pipeline {
             sh 'docker logout || true'
         }
     }
-
+}
