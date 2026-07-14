@@ -82,7 +82,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying application with Docker Compose...'
-                #dir('student-ecommerce') 
+                
                     sh 'docker-compose down'
                     sh 'docker-compose up -d --build'
 		
