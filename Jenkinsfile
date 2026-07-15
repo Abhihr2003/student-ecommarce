@@ -83,8 +83,8 @@ pipeline {
             steps {
                 echo 'Deploying application with Docker Compose V2...'
                 
-                    sh 'docker compose down'
-                    sh 'docker compose up -d --build'
+                    sh '/usr/local/bin/docker compose down'
+                    sh '/usr/local/bin/docker compose up -d --build'
 		
             }
         }
