@@ -81,10 +81,10 @@ pipeline {
 
         stage('Deploy') {
             steps {
-                echo 'Deploying application with Docker Compose V2...'
+                echo 'Deploying application with Docker Compose...'
                 
-                    sh '/usr/local/bin/docker compose down'
-                    sh '/usr/local/bin/docker compose up -d --build'
+                    sh 'docker-compose down'
+                    sh 'docker-compose up -d --build'
 		
             }
         }
