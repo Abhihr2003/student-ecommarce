@@ -91,7 +91,7 @@ docker pull shek07/ecommarce:latest
 
 docker run -d \
   --name student-ecommerce \
-  -p 8080:8080 \
+  -p 8090:8080 \
   --restart unless-stopped \
   shek07/ecommarce:latest
 '''
