@@ -83,8 +83,19 @@ pipeline {
             steps {
                 echo 'Deploying application with Docker Compose...'
                 
-                    sh 'docker-compose down'
-                    sh 'docker-compose up -d --build'
+                    sh '''
+docker stop student-ecommerce || true
+docker rm student-ecommerce || true
+
+docker pull shek07/ecommarce:latest
+
+docker run -d \
+  --name student-ecommerce \
+  -p 8080:8080 \
+  --restart unless-stopped \
+  shek07/ecommarce:latest
+'''
+                 
 		
             }
         }
